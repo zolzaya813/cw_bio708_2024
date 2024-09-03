@@ -58,12 +58,12 @@ iris %>%
 ##change bin number
 iris %>% 
   ggplot(aes(x = Sepal.Length)) +
-  geom_histogram(bins = 50, +
-                   color = "blue")
+  geom_histogram(bins = 50)
+
 ##change edge color
 iris %>% 
   ggplot(aes(x = Sepal.Length)) +
-  geom_histogram(bins = 50,color = "blue")
+  geom_histogram(bins = 15,color = "blue")
 
 ##change bar color
 iris %>% 
