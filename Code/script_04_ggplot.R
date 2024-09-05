@@ -26,7 +26,7 @@ iris %>%
 #change point color by specific color
 iris %>% 
   ggplot(aes(x = Sepal.Length,
-             y = Sepal.Width,)) +
+             y = Sepal.Width)) +
   geom_point( color = "red")
 
 # line --------------------------------------------------------------------
