@@ -56,7 +56,6 @@ for (i in 1:100) {
 #load library #patchwork
 
 library(patchwork)
-
 df_sample <- tibble(mu_hat = mu_i,
                     var_hat= sigma_i)
 
