@@ -7,7 +7,7 @@ rm(list = ls())
 
 source(here::here("Code/set_library.R"))
 
-df_fl <- read_csv("data_raw/data_fish_length.csv")
+df_fl <- read_csv(here::here("data_raw/data_fish_length.csv"))
 print(df_fl)
 
 # unique returns unique values as a vector
