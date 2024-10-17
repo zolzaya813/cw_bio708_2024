@@ -9,7 +9,7 @@ source(here::here("Code/set_library.R"))
 
 # Partition variability ---------------------------------------------------
 
-#df_anova <- read_csv(here::here("data_raw/data_fish_length_anova.csv"))
+df_anova <- read_csv(here::here("data_raw/data_fish_length_anova.csv"))
 
 distinct(df_anova, lake)
 
@@ -102,3 +102,4 @@ m <- aov(formula = length ~ lake,
 
 print(m)
 summary(m)
+
