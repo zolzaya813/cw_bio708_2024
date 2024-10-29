@@ -10,7 +10,7 @@ source(here::here("Code/set_library.R"))
 
 # t-test ~ lm -------------------------------------------------------------
 
-df_fl <- read_csv("data_raw/data_fish_length.csv")
+df_fl <- read_csv(here::here("data_raw/data_fish_length.csv"))
 print(df_fl)
 
 v_mu <- df_fl %>% 
@@ -39,7 +39,7 @@ t.test(x = lake_b, y = lake_a, var.equal = TRUE)
 
 # ANOVA -------------------------------------------------------------------
 
-df_anova <- read_csv("data_raw/data_fish_length_anova.csv")
+df_anova <- read_csv(here::here("data_raw/data_fish_length_anova.csv"))
 print(df_anova)
 
 # group means
