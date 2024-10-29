@@ -76,7 +76,13 @@ y_pred <- predict(m_iris0,
 
 df_new <- df_new %>%
   mutate(y_pred = y_pred)
+
 g_org + 
   geom_line(data = df_new,
             aes(y = y_pred),
             color = grey(0, 0.5))
+
+## alternative codes
+b <- coef(m_iris0)
+df_new <- df_new %>%
+   mutate(y_pred = b[1] + b[2] * Petal.Width)
